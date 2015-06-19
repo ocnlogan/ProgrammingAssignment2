@@ -3,7 +3,8 @@
 
 ## Write a short comment describing this function
 #this function is similar to the example function given.
-#It accepts matrix variables
+#It accepts matrix variables, and lists that containing functions that 
+#will actually calculate/retrieve cached inverse matrices.
 
 makeCacheMatrix <- function(x = matrix()) {
      m <- NULL
@@ -30,6 +31,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
      
      m <- x$getmatrix()
+     #if the matrix value is not null, then get the cached copy
      if(!is.null(m)) {
           message("getting cached inverse matrix")
           return(m)
