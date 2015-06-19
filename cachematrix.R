@@ -4,7 +4,7 @@
 ## Write a short comment describing this function
 #this function is similar to the example function given.
 #It accepts matrix variables, and lists that containing functions that 
-#will actually calculate/retrieve cached inverse matrices.
+#will actually calculate/retrieve and cache inverse matrices.
 
 makeCacheMatrix <- function(x = matrix()) {
      m <- NULL
